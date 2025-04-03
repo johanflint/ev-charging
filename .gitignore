@@ -1,0 +1,12 @@
+# Parcel
+.parcel-cache/
+dist/
+
+# Node
+node_modules/
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
