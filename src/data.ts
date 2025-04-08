@@ -19,6 +19,22 @@ export const networks: ChargingNetwork[] = [
             centsPerKwh: 39,
             kiloWattHour: 180,
         }]
+    },
+    {
+        id: "iecharge",
+        name: "IECharge",
+        countryCode: "FR",
+        logoUrl: "iecharge.png",
+        howToUse: "Use IECharge app",
+        infoUrl: "https://iecharge.io/pricing/",
+        mapUrl: "https://iecharge.io/locations/",
+        rates: [{
+            centsPerKwh: 25,
+            kiloWattHour: 160,
+        }, {
+            centsPerKwh: 25,
+            kiloWattHour: 320,
+        }]
     }
 ];
 
