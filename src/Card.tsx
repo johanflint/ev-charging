@@ -9,7 +9,7 @@ interface Props {
 const formatter = Intl.NumberFormat("nl-NL", { style: "currency", currency: "EUR" });
 
 export function Card({ network } : Props) {
-    return <li className="col-span-1 rounded-lg bg-white shadow-sm divide-y divide-gray-200">
+    return <li className="flex flex-col col-span-1 rounded-lg bg-white shadow-sm divide-y divide-gray-200">
         <div className="flex w-full items-center justify-between p-6 space-x-6">
             <div className="flex-1 truncate fl">
                 <div className="flex items-center">
@@ -19,7 +19,7 @@ export function Card({ network } : Props) {
             </div>
             <img className="h-10 w-10" src={`images/${network.logoUrl}`} alt={network.name} />
         </div>
-        <div className="grid grid-cols-[16px_repeat(2,minmax(0,1fr))] p-6 text-sm text-gray-500 gap-y-3">
+        <div className="flex-grow grid grid-cols-[16px_repeat(2,minmax(0,1fr))] grid-rows-3 p-6 text-sm text-gray-500 gap-y-3">
             <Rates rates={network.rates} />
         </div>
         <div>
