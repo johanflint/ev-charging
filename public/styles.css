@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant data-filter-disabled (&[data-filter-enabled~="false"]);
+
 @layer base {
     body {
         @apply bg-gray-100;

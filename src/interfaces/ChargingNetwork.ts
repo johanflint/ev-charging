@@ -24,3 +24,4 @@ export interface ChargingRate {
 }
 
 export const isFastCharger = (chargingRate: ChargingRate) => chargingRate.kiloWattHour >= 50;
+export const isSlowCharger = (chargingRate: ChargingRate) => chargingRate.kiloWattHour < 50;
