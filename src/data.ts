@@ -38,9 +38,19 @@ export const networks: ChargingNetwork[] = [
     }
 ];
 
+export enum FilterKey {
+    World = "WW",
+    Charger = "charger",
+    FastCharger = "fastCharger",
+}
+
 export const countries: CountryMap = {
+    [FilterKey.World]: {
+        name: "World",
+        flag: "🌍"
+    },
     "FR": {
         name: "France",
         flag: "🇫🇷"
-    }
+    },
 }
